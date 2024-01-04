@@ -20,6 +20,7 @@ public class GetWeatherOneDayTest extends AccuweatherAbstractTest {
     @Test
     void getWeatherOneDay_shouldReturn() {
 
+        //не хватает класса Weather, надо добавить его из исходников в исходном проекте
         Weather response = given()
                 .queryParam("apikey", getApiKey())
                 .when()
