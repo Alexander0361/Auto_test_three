@@ -22,6 +22,7 @@ public class GetLocationTest extends AccuweatherAbstractTest {
     @Test
     void getLocation_search_returnMinsk() {
 
+        //не хватает класса Location, надо добавить его из исходников в исходном проекте
         List<Location> response = given()
                 .queryParam("apikey", getApiKey())
                 .queryParam("q", "Minsk")
